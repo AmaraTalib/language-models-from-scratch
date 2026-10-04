@@ -16,7 +16,7 @@ class MarkovChain:
             if(len(tokens)-1)==i:
                 break
 
-            self.graph[token].append(tokens[i+1])
+            self.graph[token].append(tokens[i+1])      #"I": ["hope"],  "you": ["cry"] ....
 
     def generate(self, prompt, length=10):
         current = self._tokenize(prompt)[-1]
@@ -35,7 +35,7 @@ class MarkovChain:
 
 #Tested on Weekends song "Cry for me" ;)
 
-text = """And I hope you cry for me like I cry for you       
+text = """I hope you cry for me like I cry for you       
 Every night for you, take it easy on me, baby
 'Cause I tried with you, saw my life with you
 End of time with you, now we're strangers

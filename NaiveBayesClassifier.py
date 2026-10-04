@@ -1,4 +1,4 @@
-from string import punctuation
+from string import punctuation            #This is supervised Learning as we are giving some data for training
 from collections import Counter
 
 post_comments_with_labels = [
